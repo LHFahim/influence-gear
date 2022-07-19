@@ -44,36 +44,42 @@ nav ul li a {
         front section  
  ----------------------------*/
 
-.front {
+.top-container {
   width: 80%;
-  margin: 145px auto 0;
+  margin: 0 auto;
+  padding-top: 50px;
+
   display: flex;
+  align-items: center;
+  /* text-align: center; */
+
+  /* border: 1px solid black; */
 }
-.half-width {
+
+.top-container-text {
   width: 50%;
+  /* border: 1px solid red; */
 }
-.half-width img {
-  position: relative;
-  left: 100px;
-}
-.main-camera {
+.top-container-img {
+  width: 50%;
+
+  text-align: center;
+  padding: 55px 0 0 0;
   background-image: url("../images/circle.svg");
   background-repeat: no-repeat;
   background-position: center;
-  padding-top: 60px;
-  position: relative;
-  left: 100px;
-  bottom: 60px;
+
+  /* border: 1px solid red; */
 }
 
-.front-title {
+.top-title {
   color: #3a3a3a;
   font-size: 52px;
   font-weight: 700;
   margin-bottom: 8px;
 }
 
-.front-p {
+.top-p {
   color: #3a3a3a;
   font-size: 16px;
   font-weight: 600;
@@ -192,25 +198,56 @@ nav ul li a {
   color: white;
 }
 
+/* FOOTER SECTION */
+
+footer {
+  background-color: #0a0826;
+
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10px;
+}
+
+.ft-header {
+  padding: 10px 0 10px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-left: 40px;
+}
+
+.ft-cr {
+  margin: 0 0 0 40px;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer li {
+  display: inline-block;
+}
+
 @media screen and (max-width: 768px) {
   /* top  section */
-  .front {
+  .top-container {
+    width: 80%;
+
     display: flex;
     flex-direction: column-reverse;
-    align-items: center;
+    gap: 50px;
+    /* align-items: center; */
+    text-align: center;
   }
-  .half-width img {
-    position: relative;
-    left: -20px;
+  .top-container-img {
+    width: 100%;
   }
-  .main-camera {
-    padding-top: 60px;
-    position: relative;
-    left: 0px;
+  .top-container-text {
+    width: 100%;
   }
-  .half-width {
-    display: flex;
-    flex-direction: column;
+  .prebook-button {
+    padding: 20px 50px;
+    font-size: 1.1rem;
   }
 
   /* partner  section */
@@ -262,32 +299,9 @@ nav ul li a {
   }
 }
 
-/* FOOTER SECTION */
-
+/* .partners,
+.collection-container,
+.feature-container,
 footer {
-  background-color: #0a0826;
-
-  color: whitesmoke;
-  text-align: center;
-  font-family: "Roboto", sans-serif;
-  padding-bottom: 10px;
-}
-
-.ft-header {
-  padding: 10px 0 10px;
-  font-size: 1.5rem;
-  color: whitesmoke;
-  margin-left: 40px;
-}
-
-.ft-cr {
-  margin: 0 0 0 40px;
-}
-
-footer img {
-  width: 50px;
-}
-
-footer li {
-  display: inline-block;
-}
+  display: none;
+} */
