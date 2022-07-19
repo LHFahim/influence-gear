@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+/*---------------------------
+ header and navbar section  
+ ----------------------------*/
+
+.nav-container {
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 80px;
+  color: #3a3a3a;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.brand-title {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  padding: 0 10px;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+/*---------------------------
+        front section  
+ ----------------------------*/
+
+.front {
+  width: 80%;
+  margin: 145px auto 0;
+  display: flex;
+}
+.half-width {
+  width: 50%;
+}
+.half-width img {
+  position: relative;
+  left: 100px;
+}
+.main-camera {
+  background-image: url("../images/circle.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 60px;
+  position: relative;
+  left: 100px;
+  bottom: 60px;
+}
+
+.front-title {
+  color: #3a3a3a;
+  font-size: 52px;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.front-p {
+  color: #3a3a3a;
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 16px;
+}
+
+.prebook-button {
+  background-color: #e02c6d;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 40px;
+  color: #ffffff;
+}
+
+/*---------------------------
+     partners section  
+-----------------------------*/
+
+.partners {
+  width: 1110px;
+  height: 110px;
+  margin: 70px auto 100px;
+
+  border-top: 1px solid #aaaaaa;
+  border-bottom: 1px solid #aaaaaa;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.partners img {
+  width: 80px;
+  height: 80px;
+}
+
+/*---------------------------
+    popular collection section  
+-----------------------------*/
+
+.collection-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  width: 1050px;
+  margin: 0 auto 100px;
+}
+
+.collection-header {
+  margin: 30px 0;
+}
+
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+  grid-row-gap: 30px;
+}
+
+.product {
+  box-shadow: 10px 10px 30px 10px rgba(0, 0, 0, 0.185);
+  border-radius: 5px;
+}
+
+.product-banner {
+  margin: 15px 15px 15px 15px;
+}
+
+.product-banner img {
+  width: 300px;
+  height: 256px;
+}
+
+.product-details {
+  margin: 15px;
+}
+
+.product-see-more {
+  color: #e02c6d;
+  margin-top: 40px;
+  align-self: flex-end;
+}
+
+/*---------------------------
+    featured section  
+-----------------------------*/
+
+.feature-container {
+  width: 1110px;
+  margin: 0 auto 100px;
+
+  display: flex;
+}
+
+.featured-info {
+  margin-left: 100px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 15px;
+}
+
+.feature-title {
+  columns: #0a0826;
+  font-size: 38px;
+  font-weight: 700;
+}
+
+.join-btn {
+  width: 155px;
+  height: 44px;
+  background-color: #e02c6d;
+  border: none;
+  color: white;
+}
+
+@media screen and (max-width: 768px) {
+  /* top  section */
+  .front {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .half-width img {
+    position: relative;
+    left: -20px;
+  }
+  .main-camera {
+    padding-top: 60px;
+    position: relative;
+    left: 0px;
+  }
+  .half-width {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* partner  section */
+  .partners {
+    width: 80%;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .partners img {
+    width: 15%;
+    padding: 0 5% 0 5%;
+  }
+
+  /*    popular collection section   */
+  .collection-container {
+    width: 80%;
+  }
+  .collections {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    grid-row-gap: 30px;
+    width: 70%;
+  }
+
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Feature section */
+  .feature-container {
+    width: 80%;
+    margin: 0 auto 100px;
+
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .featured-info {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+}
+
+/* FOOTER SECTION */
+
+footer {
+  background-color: #0a0826;
+
+  color: whitesmoke;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+  padding-bottom: 10px;
+}
+
+.ft-header {
+  padding: 10px 0 10px;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  margin-left: 40px;
+}
+
+.ft-cr {
+  margin: 0 0 0 40px;
+}
+
+footer img {
+  width: 50px;
+}
+
+footer li {
+  display: inline-block;
+}
